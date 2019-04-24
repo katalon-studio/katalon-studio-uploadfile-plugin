@@ -1,0 +1,15 @@
+.gradle
+
+bin
+
+Drivers/*.jar
+
+Reports
+
+Libs
+
+.classpath
+
+.project
+
+.DS_Store
