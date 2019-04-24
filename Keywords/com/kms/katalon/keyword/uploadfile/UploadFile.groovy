@@ -68,7 +68,7 @@ public class UploadFile {
 	}
 
 	/**
-	 * Upload file using robot.
+	 * Upload file.
 	 *
 	 * @param object The object from which we can click to choose files.
 	 * @param file The full path of the file that needs to upload.
