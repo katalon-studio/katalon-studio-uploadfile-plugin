@@ -42,12 +42,10 @@ public class UploadFile {
 		String browserName = caps.getBrowserName().capitalize()
 
 		if (browserName.toLowerCase().equals("firefox")){
-			KeywordUtil.logInfo("Clicked on firefox")
 			clickJS(object, driver);
 		}
 		else {
 			try {
-				KeywordUtil.logInfo("Clicked on: " + browserName)
 				WebUiBuiltInKeywords.click(object)
 			}
 			catch (Exception e) {
