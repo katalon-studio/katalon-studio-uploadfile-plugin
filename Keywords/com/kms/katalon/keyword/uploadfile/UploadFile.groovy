@@ -20,6 +20,7 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.driver.SmartWaitWebDriver
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
 
 import groovy.transform.CompileStatic
@@ -38,7 +39,7 @@ public class UploadFile {
 	@Keyword
 	public void uploadFileUsingRobot(TestObject object, String file) {
 		WebDriver driver = DriverFactory.getWebDriver()
-		Capabilities caps = ((RemoteWebDriver) driver).getCapabilities()
+		Capabilities caps = ((SmartWaitWebDriver) driver).getCapabilities()
 		String browserName = caps.getBrowserName().capitalize()
 
 		if (browserName.toLowerCase().equals("firefox")){
